@@ -1,0 +1,115 @@
+/* Main */
+
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 83vh;
+
+    display: flex;  
+}
+
+/* Inputs */
+
+.inputs-container {
+    position: relative;
+
+    height: 100%;
+    padding: 4rem 4rem 2rem 4rem;
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.email-input-container {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.email-input-container > input {
+    border: 0;
+    border-bottom: thin solid var(--a1);
+}
+
+.email-input-container > input:invalid {
+    box-shadow: none;
+    border-bottom: thin solid var(--a2);
+}
+
+
+.inputs-radio-buttons {
+    width: 80%;
+    height: 10vh;
+
+    display: flex;
+    align-items: stretch;
+
+    gap: 0.6rem;
+}
+
+.inputs-radio-buttons > .radio-button-container {
+    flex: 1;
+    
+    display: flex;
+}
+
+.inputs-radio-buttons > .radio-button-container > label, .inputs-checkboxes > .checkbox-container > label {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: thin solid var(--a1);
+}
+
+.inputs-checkboxes {
+    min-width: 10%;
+
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.6rem;
+
+    align-items: stretch;
+}
+
+.inputs-checkboxes > .checkbox-container {
+    text-align: center;
+}
+
+
+/* Example */
+
+.example-container {
+    position: relative;
+
+    padding: 4rem 4rem 2rem 4rem;
+
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+}
+
+.example {
+    width: 70%;
+    height: 40%;
+    background: var(--bg2);
+}

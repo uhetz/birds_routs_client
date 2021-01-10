@@ -1,0 +1,47 @@
+/* General and Sitewide Styles  */
+
+/* 1. General Styles */
+
+:root {
+  --t1: #30343f;
+  --t2: #fafaff;
+  --bg1: #e4d9ff;
+  --bg2: #1e2749;
+  --a1: #273469;
+  --a12: #27346911;
+  --a2: #e63946;
+}
+
+/* You could add here ol and ul */
+
+/* 2. Utilities */
+
+/* I Don't get that yet */
+
+/* 3. Sitewide */
+
+.app-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+    
+
+  background: white;
+}
+
+input[type=radio], input[type=checkbox] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+input[type=radio]:checked + label, input[type=checkbox]:checked + label {
+  background: var(--bg2);
+  color: var(--t2);
+}
+
+input:focus, input:hover, label:hover {
+  outline: none;
+  background: var(--a12);
+}
